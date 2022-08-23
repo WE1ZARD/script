@@ -1,12 +1,13 @@
 --[[
-**********************************************
+**********************************************************************
 
     Smart Bandage
     1. bandage mouseover Ally without change target
     2. bandage Ally
     3. bandage self
 
-**********************************************
+    How To Use: type in macro with "/run bandage()" or "/bandage"
+**********************************************************************
 ]]
 
 local L={}
@@ -18,7 +19,12 @@ do
     end
 end
 
-Bandage = function()
+SLASH_BANDAGE1 = "/bandage"
+SlashCmdList["BANDAGE"] = 
+function(arg)
+    bandage()
+end
+bandage = function()
     for b=0,4 do 
         for s=1,GetContainerNumSlots(b,s)do 
             local n=GetContainerItemLink(b,s)
