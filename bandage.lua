@@ -7,6 +7,8 @@
     3. bandage self
 
     How To Use: type in macro with "/run bandage()" or "/bandage"
+    For SuperMacro: /run for b=0,4 do for s=1,GetContainerNumSlots(b,s)do n=GetContainerItemLink(b,s)if n and(strfind(n,"绷带")or strfind(n,"The Rag"))then if UnitExists("mouseover")and not UnitCanAttack("player","mouseover")then TargetUnit("mouseover")UseContainerItem(b,s)SpellTargetUnit("mouseover")TargetLastTarget()elseif UnitExists("target")and not UnitCanAttack("player","target")then UseContainerItem(b,s)SpellTargetUnit("target")else UseContainerItem(b,s)SpellTargetUnit("player")end end end end
+
 **********************************************************************
 ]]
 
