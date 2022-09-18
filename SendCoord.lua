@@ -1,7 +1,7 @@
 --[[ 
 ====================================== 
 Send Coord
-  - Send Coord click MinimapZoneText (solo /in patry /in raid)
+  - click on MinimapZoneText (solo /in patry /in raid)
 ====================================== 
 ]]
 local function SendCoord()
