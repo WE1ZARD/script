@@ -12,7 +12,7 @@ local function SendCoord()
     elseif GetNumPartyMembers() > 0 then 
         SendChatMessage( format(GetZoneText()..' - (%.0f,%.0f)', pX*100, pY*100), "PARTY" )    
     else
-        print( format(GetZoneText()..' - (%.0f,%.0f)', pX*100, pY*100), "PARTY" )
+        DEFAULT_CHAT_FRAME:AddMessage('|cffFFFF00'..format(GetZoneText()..' - (%.0f,%.0f)', pX*100, pY*100)..'|r')
     end
 end
 
