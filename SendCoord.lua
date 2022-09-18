@@ -12,7 +12,7 @@ local function SendCoord()
     elseif GetNumPartyMembers() > 0 then 
         SendChatMessage( format(GetZoneText()..' - (%.0f,%.0f)', pX*100, pY*100), "PARTY" )    
     else
-        print( format('|c'..RAID_CLASS_COLORS[class].colorStr..GetZoneText()..' - |r(%.0f,%.0f)', pX*100, pY*100) )
+        print( format(GetZoneText()..' - (%.0f,%.0f)', pX*100, pY*100), "PARTY" )
     end
 end
 
